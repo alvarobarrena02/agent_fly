@@ -1,0 +1,7 @@
+{
+  "name": "ionicLeyes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
