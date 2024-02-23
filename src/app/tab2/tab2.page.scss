@@ -1,0 +1,39 @@
+ion-header {
+  --background: #28a745; // Ajusta el color para diferenciar la página
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; // Espacia las tarjetas uniformemente
+  margin: 0 -16px; // Ajusta según sea necesario para alinear con el diseño general
+}
+
+ion-card {
+  flex: 0 1 calc(25% - 32px); // Ocupa el 25% del contenedor, ajustando para el margen
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; // Organiza el contenido de la tarjeta verticalmente
+
+  ion-card-header, ion-card-content {
+    padding: 16px;
+  }
+
+  .card-image {
+    width: 100%; // Asegura que la imagen ocupe todo el ancho disponible de la tarjeta
+    height: 200px; // Altura fija para todas las imágenes
+    object-fit: cover; // Asegura que la imagen cubra el espacio designado sin perder proporciones
+  }
+}
+
+// Ajusta el título para mantener coherencia
+ion-card-title {
+  color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}

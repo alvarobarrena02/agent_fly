@@ -1,0 +1,52 @@
+:root {
+  --ion-color-primary: #0052cc; // Azul oscuro
+  --ion-color-primary-rgb: 0,82,204;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #0041b7;
+  --ion-color-primary-tint: #1a62d9;
+}
+
+ion-header {
+  --background: linear-gradient(145deg, #007bff, #0052cc); // Gradiente personalizado para la cabecera
+}
+
+ion-card {
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  ion-img {
+    max-height: 250px; // Ajuste para una mejor visualización de la imagen
+    object-fit: cover;
+  }
+
+  ion-card-header,
+  ion-card-content {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5); // Fondo semitransparente para mejorar la legibilidad
+    color: #ffffff;
+  }
+
+  ion-card-title {
+    color: #ffffff;
+    font-size: 1.4em; // Tamaño de fuente más grande para el título
+  }
+}
+
+ion-list {
+  ion-item {
+    --background: #f8f9fa;
+    margin: 8px 16px;
+    border-radius: 8px;
+
+    ion-icon {
+      --color: #007bff;
+      margin-right: 8px;
+      size: 1.5em; // Iconos más grandes
+    }
+
+    --ion-item-background-hover: #e0e0e0; // Color de fondo al pasar el mouse
+    --padding-start: 20px; // Más espacio al inicio
+    --border-radius: 10px; // Bordes más redondeados
+  }
+}

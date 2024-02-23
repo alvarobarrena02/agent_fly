@@ -1,0 +1,25 @@
+ion-header {
+  --background: #17a2b8; // Color distintivo para la página de contacto
+}
+
+ion-list {
+  margin: 16px;
+
+  ion-item {
+    --background: #f8f9fa;
+    --border-color: #dee2e6;
+    --border-style: solid;
+    --border-width: 1px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+
+    ion-label {
+      --color: #495057;
+    }
+  }
+}
+
+ion-button {
+  margin: 16px;
+  --background: #007bff; // Botón que coincide con el esquema de colores
+}
